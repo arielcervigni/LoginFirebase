@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644185843622",
+    "project_id": "login-34d9c",
+    "storage_bucket": "login-34d9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644185843622:android:9b5a8d88b74a8a020e1167",
+        "android_client_info": {
+          "package_name": "com.acervigni.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644185843622-a7mfsdfgtmkmrebhfin683volvqb5lhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqb6lY0VPQRS26HAxCyhHavDG-uHQF9aw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644185843622-a7mfsdfgtmkmrebhfin683volvqb5lhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
