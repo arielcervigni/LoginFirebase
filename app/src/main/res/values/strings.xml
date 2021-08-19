@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Login</string>
+    <string name="prefs">com.acervigni.login.PREFERENCE_FILE_KEY</string>
+    <string name="default_web_id" translatable="false">644185843622-a7mfsdfgtmkmrebhfin683volvqb5lhf.apps.googleusercontent.com</string>
 </resources>
