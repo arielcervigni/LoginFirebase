@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
         iniciarMain(email?: "" ,provider?: "")
 
         // Guardado de datos
-        val prefs = getSharedPreferences(getString(R.string.prefs), Context.MODE_PRIVATE).edit()
-        prefs.putString("email",email)
-        prefs.putString("provider", provider.toString())
-        prefs.apply()
+//        val prefs = getSharedPreferences(getString(R.string.prefs), Context.MODE_PRIVATE).edit()
+//        prefs.putString("email",email)
+//        prefs.putString("provider", provider.toString())
+//        prefs.apply()
 
     }
 
@@ -45,9 +45,9 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.hCerrarSesion.setOnClickListener {
-            val prefs = getSharedPreferences(getString(R.string.prefs), Context.MODE_PRIVATE).edit()
-            prefs.clear()
-            prefs.apply()
+//            val prefs = getSharedPreferences(getString(R.string.prefs), Context.MODE_PRIVATE).edit()
+//            prefs.clear()
+//            prefs.apply()
 
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
