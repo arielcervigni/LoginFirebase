@@ -103,12 +103,16 @@ class AuthActivity : AppCompatActivity() {
             googleClient.signOut()
             startActivityForResult(googleClient.signInIntent,GOOGLE_SIGN_IN)
         }
+
+        binding.btnLFacebook.setOnClickListener {
+
+        }
     }
 
     private fun session() {
         val prefs = getSharedPreferences(getString(R.string.prefs), Context.MODE_PRIVATE)
         val email = prefs.getString("email",null)
-        val provider = prefs.getString("email",null)
+        val provider = prefs.getString("provider",null)
         if(email != null && provider != null)
             irAlMain(email, ProviderType.valueOf(provider))
     }
@@ -127,8 +131,7 @@ class AuthActivity : AppCompatActivity() {
         i.putExtra("email",email)
         i.putExtra("provider",provider.toString())
         startActivity(i)
-        binding.etLPassword.setText("")
-        binding.etLUsername.setText("")
+        finish()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

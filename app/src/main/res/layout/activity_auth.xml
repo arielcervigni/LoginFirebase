@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/grisFB"
     android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
     tools:context=".view.AuthActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tipNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
         android:hint="Username"
+        android:layout_marginVertical="10dp"
         app:errorEnabled="false"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
@@ -31,7 +32,6 @@
         android:id="@+id/tipPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
         android:hint="Contraseña"
         app:errorEnabled="false"
         app:startIconDrawable="@drawable/ic_baseline_lock_24">
@@ -47,28 +47,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_l_iniciar"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:text="INICIAR SESION" />
+            android:text="INICIAR SESION"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/black" />
+
 
         <Button
             android:id="@+id/btn_l_registrar"
-            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
-            android:text="REGISTRARSE" />
+            android:text="REGISTRARSE"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/azulOscuroFB" />
 
     </LinearLayout>
 
@@ -78,9 +80,22 @@
         android:drawableLeft="@drawable/iconogoogle"
         android:drawablePadding="8dp"
         android:id="@+id/btn_l_google"
-        android:layout_marginHorizontal="10dp"
         android:textColor="@android:color/white"
-        app:backgroundTint="@color/azulFB"
+        app:backgroundTint="@color/rojoGoogle"
+        android:text="Ingresar con Google"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_logo_de_facebook"
+        android:drawableTint="@color/white"
+        android:drawablePadding="8dp"
+        android:id="@+id/btn_l_facebook"
+
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/azulFacebook"
         android:text="Ingresar con Google"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />

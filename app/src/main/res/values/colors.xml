@@ -11,4 +11,6 @@
     <color name="azulOscuroFB">#2C384A</color>
     <color name="coralFB">#FF8A65</color>
     <color name="grisFB">#ECEFF1</color>
+    <color name="azulFacebook">#3B5998</color>
+    <color name="rojoGoogle">#DB4A39</color>
 </resources>

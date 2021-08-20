@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "644185843622-8ecof8duqrg93jpu75fao05bnc89is3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.acervigni.login",
+            "certificate_hash": "ebd0af340322b548b8b21f00372333a2cfd6cc5e"
+          }
+        },
+        {
           "client_id": "644185843622-a7mfsdfgtmkmrebhfin683volvqb5lhf.apps.googleusercontent.com",
           "client_type": 3
         }
