@@ -80,8 +80,8 @@
         android:drawableLeft="@drawable/iconogoogle"
         android:drawablePadding="8dp"
         android:id="@+id/btn_l_google"
-        android:textColor="@android:color/white"
-        app:backgroundTint="@color/rojoGoogle"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
         android:text="Ingresar con Google"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
