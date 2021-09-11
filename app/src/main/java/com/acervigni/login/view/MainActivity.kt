@@ -1,8 +1,6 @@
 package com.acervigni.login.view
 
-import android.Manifest.permission
 import android.Manifest.permission.CAMERA
-import android.app.Activity
 import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
@@ -15,40 +13,27 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.acervigni.login.DbHelper
 import com.acervigni.login.model.Persona
 import com.acervigni.login.R
 import com.acervigni.login.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import androidx.core.app.ActivityCompat.startActivityForResult
 import java.io.File
 import android.graphics.BitmapFactory
 
-import android.graphics.Bitmap
-
 import android.media.MediaScannerConnection
-import android.media.MediaScannerConnection.OnScanCompletedListener
 import android.content.DialogInterface
 
 import android.content.pm.PackageManager
 import android.provider.Settings
 
-import androidx.annotation.NonNull
 import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 
 import android.os.Build
 
-import android.annotation.TargetApi
-
-import com.google.android.material.snackbar.Snackbar
-
-
-
-
-
-
+import android.view.Menu
+import android.view.MenuItem
 
 
 enum class ProviderType {
@@ -96,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun iniciarMain(email: String, provider:String) {
-        title = "Home"
+        title = "Inicio"
         binding.hEmail.text = email
         binding.hProveedor.text = provider
 
@@ -114,7 +99,6 @@ class MainActivity : AppCompatActivity() {
 
             /* Esto guarda en SQLite */
             if(!binding.etHNombre.text.isNullOrEmpty() && !binding.etHEdad.text.isNullOrEmpty()){
-
 
                 val persona = Persona ("",binding.etHNombre.text.toString(),binding.etHEdad.text.toString().toInt())
 
@@ -324,6 +308,29 @@ class MainActivity : AppCompatActivity() {
         builder.show()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return true
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.m_home -> {
+                startActivity(Intent(this,MainActivity::class.java))
+            }
+            R.id.m_agregar_persona -> {
+                startActivity(Intent(this,AgregarPersonaActivity::class.java))
+            }
+            R.id.m_ver_personas -> {
+                irAListaPersonas()
+            }
+            R.id.m_acerca -> {
+                startActivity(Intent(this,AcercaDeActivity::class.java))
+            }
+        }
+
+
+        return super.onOptionsItemSelected(item)
+    }
 
 }

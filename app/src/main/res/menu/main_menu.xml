@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/m_home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/m_agregar_persona"
+        android:title="Nueva Persona" />
+    <item
+        android:id="@+id/m_ver_personas"
+        android:title="Ver Personas" />
+    <item
+        android:id="@+id/m_acerca"
+        android:title="Acerca de.." />
+</menu>
