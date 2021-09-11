@@ -56,7 +56,7 @@ class DbHelper(
     }
 
     fun crearPersona(cursor: Cursor): Persona {
-        val id = cursor.getInt(cursor.getColumnIndex(COLUMN_ID))
+        val id = cursor.getString(cursor.getColumnIndex(COLUMN_ID))
         val nombre = cursor.getString(cursor.getColumnIndex(COLUMN_NOMBRE))
         val edad = cursor.getInt(cursor.getColumnIndex(COLUMN_EDAD))
 

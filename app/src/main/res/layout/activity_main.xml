@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:nestedScrollingEnabled="true"
     android:background="@color/grisFB"
     tools:context=".view.MainActivity">
 
@@ -14,7 +15,7 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="Bienvenido!" />
 
     <TextView
@@ -24,7 +25,7 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="TextView" />
 
     <TextView
@@ -33,7 +34,7 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:layout_height="wrap_content"
         android:text="TextView" />
 
@@ -41,15 +42,15 @@
         android:id="@+id/h_cerrar_sesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="cerrar sesion" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tipNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="5dp"
         android:hint="Nombre"
         app:errorEnabled="false"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
@@ -67,7 +68,7 @@
         android:id="@+id/tipEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginHorizontal="5dp"
         android:hint="Edad"
         app:errorEnabled="false"
         app:startIconDrawable="@android:drawable/ic_menu_month">
@@ -84,15 +85,47 @@
         android:id="@+id/h_guardarPersona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="Guardar Persona" />
 
     <Button
         android:id="@+id/h_verPersonas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text="Ver Personas" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/azulFacebook"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/btn_galeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@color/azulFacebook"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/tv_h_rta"
@@ -101,9 +134,16 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/azulOscuroFB"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:text=""
         android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/im_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_margin="5dp"/>
 
 
 </LinearLayout>
