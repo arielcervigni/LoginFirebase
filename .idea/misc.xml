@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Ariel/Desktop/LoginFirebase/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Ariel/Desktop/LoginFirebase/app/src/main/res/layout/activity_personas.xml" value="0.1921875" />
         <entry key="..\:/Users/Ariel/Desktop/LoginFirebase/app/src/main/res/layout/peronas_layout.xml" value="0.1921875" />
@@ -10,6 +11,9 @@
         <entry key="..\:/Users/murciuoli/Desktop/LoginFirebase/app/src/main/res/layout/activity_main.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/murciuoli/Desktop/LoginFirebase/app/src/main/res/layout/activity_personas.xml" value="0.19655797101449277" />
         <entry key="..\:/Users/murciuoli/Desktop/LoginFirebase/app/src/main/res/layout/peronas_layout.xml" value="0.13385416666666666" />
+=======
+        <entry key="..\:/Users/Ariel/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_auth.xml" value="0.1361111111111111" />
+>>>>>>> b7cc6feec7099a8ad2b2c1a23caea63db4477aa1
       </map>
     </option>
   </component>
